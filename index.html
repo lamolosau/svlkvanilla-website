@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVLK Vanilla - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="pixel-font nature-text">SVLK</span>
+          <span class="version-badge">1.21+</span>
+        </a>
+
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <div class="nav-marker"></div>
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="whitelist.html" class="nav-item">Whitelist</a></li>
+            <li><a href="map.html" class="nav-item">Map</a></li>
+          </ul>
+
+          <a href="https://svlk.lakel.dev" class="modded-link">Moddé 🔥</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="pixel-font title-large">
+          SVLK <span class="nature-text">VANILLA</span>
+        </h1>
+        <p class="subtitle">
+          Survie communautaire pure. Construis, échange et explore un monde sans
+          limites.
+        </p>
+
+        <button class="btn-primary pixel-font" onclick="copyIP()">
+          <i class="fa-regular fa-copy"></i>
+          <span id="ip-text">svlkvanilla.lakel.dev</span>
+        </button>
+        <div id="copy-feedback" class="copy-feedback">Adresse IP Copiée !</div>
+      </div>
+    </header>
+
+    <section id="objectives">
+      <div class="section-header hidden">
+        <h2 class="section-title pixel-font">
+          NOS <span class="nature-text">OBJECTIFS</span>
+        </h2>
+        <p class="section-desc">
+          Contribuez aux projets communautaires pour débloquer de nouvelles
+          zones.
+        </p>
+      </div>
+
+      <div class="objectives-grid">
+        <div class="objective-card hidden">
+          <div class="obj-icon"><i class="fa-solid fa-road"></i></div>
+          <h3 class="pixel-font" style="font-size: 1.8rem">Route du Spawn</h3>
+          <p style="color: #aaa; margin-bottom: 20px">
+            Sécurisation des axes principaux pour relier les bases (Nether &
+            Overworld).
+          </p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 65%"></div>
+          </div>
+          <div
+            style="
+              text-align: right;
+              font-size: 0.8rem;
+              margin-top: 5px;
+              color: #666;
+            "
+          >
+            65%
+          </div>
+        </div>
+
+        <div class="objective-card hidden" style="transition-delay: 100ms">
+          <div class="obj-icon"><i class="fa-solid fa-dragon"></i></div>
+          <h3 class="pixel-font" style="font-size: 1.8rem">L'Ender Dragon</h3>
+          <p style="color: #aaa; margin-bottom: 20px">
+            L'accès à l'End est verrouillé. Préparez-vous pour l'événement du
+            siècle.
+          </p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div
+            style="
+              text-align: right;
+              font-size: 0.8rem;
+              margin-top: 5px;
+              color: #666;
+            "
+          >
+            0%
+          </div>
+        </div>
+
+        <div class="objective-card hidden" style="transition-delay: 200ms">
+          <div class="obj-icon"><i class="fa-solid fa-shop"></i></div>
+          <h3 class="pixel-font" style="font-size: 1.8rem">Zone Commerciale</h3>
+          <p style="color: #aaa; margin-bottom: 20px">
+            Construction de la place du marché au spawn pour échanger vos
+            ressources.
+          </p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 20%"></div>
+          </div>
+          <div
+            style="
+              text-align: right;
+              font-size: 0.8rem;
+              margin-top: 5px;
+              color: #666;
+            "
+          >
+            20%
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="staff" style="background: rgba(0, 0, 0, 0.2)">
+      <div class="section-header hidden">
+        <h2 class="section-title pixel-font">LE STAFF</h2>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
+        "
+        class="hidden"
+      >
+        <div class="objective-card" style="text-align: center; width: 280px">
+          <img
+            src="https://minotar.net/armor/bust/2s1dl/120.png"
+            style="
+              margin-bottom: 20px;
+              filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+            "
+            alt="2s1dl"
+          />
+          <h3 class="pixel-font">2s1dl</h3>
+          <span
+            style="
+              background: linear-gradient(45deg, #7c3aed, #a855f7);
+              padding: 4px 12px;
+              border-radius: 50px;
+              font-size: 0.8rem;
+              font-weight: bold;
+            "
+            >FONDATEUR</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h2 class="pixel-font nature-text">SVLK NETWORK</h2>
+          <p style="color: #666; line-height: 1.6">
+            Serveur Minecraft Vanilla conçu par des passionnés.<br />
+            Une aventure où chaque bloc posé compte.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3 class="pixel-font" style="color: white; margin-bottom: 20px">
+            NAVIGATION
+          </h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="whitelist.html">Candidature</a></li>
+            <li><a href="map.html">Carte du Monde</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="pixel-font" style="color: white; margin-bottom: 20px">
+            ÉTAT DU SERVEUR
+          </h3>
+          <div class="status-box">
+            <span class="status-dot"></span>
+            <span id="footer-count" style="color: white; font-weight: bold"
+              >Chargement...</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SVLK Vanilla. Not affiliated with Mojang Studios.</p>
+      </div>
+    </footer>
+
+    <div id="portal-overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVLK Vanilla - Whitelist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="pixel-font nature-text">SVLK</span>
+          <span class="version-badge">1.21+</span>
+        </a>
+
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <div class="nav-marker"></div>
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+            <li><a href="whitelist.html" class="nav-item">Whitelist</a></li>
+            <li><a href="map.html" class="nav-item">Map</a></li>
+          </ul>
+
+          <a href="https://svlk.lakel.dev" class="modded-link">Moddé 🔥</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header hidden">
+      <h1 class="section-title pixel-font">
+        REJOINDRE LA <span class="nature-text">TRIBU</span>
+      </h1>
+      <p class="section-desc">
+        Le serveur est sur Whitelist. Présente-toi pour nous rejoindre.
+      </p>
+    </div>
+
+    <div
+      class="container hidden"
+      style="width: 90%; max-width: 1400px; margin: 0 auto"
+    >
+      <div class="glass-container">
+        <form id="whitelistForm">
+          <div class="form-group">
+            <label>Pseudo Minecraft</label>
+            <input type="text" id="ign" placeholder="Ex: Steve" required />
+          </div>
+          <div class="form-group">
+            <label>Tag Discord</label>
+            <input
+              type="text"
+              id="discord"
+              placeholder="Ex: pseudo#0000"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Tes Projets / Motivation</label>
+            <textarea
+              id="motivation"
+              rows="4"
+              placeholder="Quel genre de joueur es-tu ?"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn-primary pixel-font"
+            style="width: 100%; justify-content: center"
+          >
+            Envoyer ma candidature
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h2 class="pixel-font nature-text">SVLK NETWORK</h2>
+          <p style="color: #666">
+            Serveur Minecraft Vanilla conçu par des passionnés.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3 class="pixel-font" style="color: white; margin-bottom: 20px">
+            NAVIGATION
+          </h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="whitelist.html">Candidature</a></li>
+            <li><a href="map.html">Carte du Monde</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="pixel-font" style="color: white; margin-bottom: 20px">
+            ÉTAT DU SERVEUR
+          </h3>
+          <div class="status-box">
+            <span class="status-dot"></span>
+            <span id="footer-count" style="color: white; font-weight: bold"
+              >Chargement...</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 SVLK Vanilla.</p></div>
+    </footer>
+
+    <div id="portal-overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
